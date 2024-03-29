@@ -7,14 +7,24 @@
 
     </title>
 
+    <script type="text/javascript">
+        function darken_link(id){
+            document.getElementById(id).style.backgroundColor = "gold";
+        }
+
+        function lighten_link(id){
+            document.getElementById(id).style.backgroundColor = "wheat";
+        }
+    </script>
     
 
     <style> 
 
         body{
-            background-image:url(./img/pexels-photo-38326.webp);
+            background-image:url(./img/saxophone.png);
             background-repeat: no-repeat;
-            background-size:cover;
+            background-position: 200px 110px;
+            background-size: 1750px 850px;
         }
 
 
@@ -27,15 +37,11 @@
 
 <body>
 
-    <div class = textbox>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit officiis numquam totam id atque, qui voluptatibus ipsum eos alias repellat ipsam explicabo vero minus vel rem laudantium quae, ullam molestiae. Repellat, nisi asperiores similique aut iusto laboriosam enim rerum eum, accusantium fugiat magni reiciendis alias tempore delectus iste aliquam ab sed illum quo omnis quibusdam. Itaque, commodi.
-        </p>
-    </div>
+    <div class = headbar id = subheadbar></div>
 
     <div class = headbar>
         <h1>
-            Site Title
+            Music, charts, and everything else!
         </h1>
     </div>
 
@@ -54,20 +60,24 @@
 
         <div class = header>
             <h1>
-                Links
+                Pages
             </h1>
         </div>
 
-        <div class = link style="background-color: darkgoldenrod;">
+        <div class = link onmouseover="darken_link(id)" onmouseleave="lighten_link(id)" id = "sheets">
             <a href = "sheetmusic.html">Sheet music</a>
         </div>
 
-        <div class = link>
+        <div class = link onmouseover="darken_link(id)" onmouseleave="lighten_link(id)" id = "charts">
             <a href = "charts.html">Charts</a>
         </div>
 
-        <div class = link style="background-color: darkgoldenrod;">
+        <div class = link onmouseover="darken_link(id)" onmouseleave="lighten_link(id)" id = "videos">
             <a href = "videos.html">Videos</a>
+        </div>
+
+        <div class = link onmouseover="darken_link(id)" onmouseleave="lighten_link(id)" id = "other">
+            <a href = "other.html">Other</a>
         </div>
     </div>
 </body>

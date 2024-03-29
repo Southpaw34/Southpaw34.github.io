@@ -1,5 +1,5 @@
 .headbar{
-    background-color: goldenrod;
+    background-color: rgb(165, 132, 50);
     top:0px;
     left:0px;
     width:100%;
@@ -21,6 +21,10 @@
     padding-top: 40px;
 }
 
+#subheadbar{
+    background-color: rgb(105, 105, 72); 
+    top: 10px;
+}
 
 
 
@@ -40,7 +44,6 @@
     background-color: goldenrod;
     left: 0px;
     top: 0px;
-    width: 20%;
     max-width: 200px;
     height: 100%;
     position: absolute;
@@ -61,7 +64,7 @@
 .textbox{
     background-color: white;
     top: 150px;
-    left: 250px;
+    left: 300px;
     right: 50px;
     bottom:50px;
     position: absolute;
@@ -70,6 +73,9 @@
     padding-right: 10%;
     padding-top:5%;
     padding-bottom: 5%;
+    border-radius: 5px;
+    font-size: 40px;
+    text-align: center;
 }
 
 
@@ -77,22 +83,27 @@
 
 
 .link{
-    margin:auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+
+    margin-top: 100px;
+    padding: 5px;
+    padding-left: 75px;
     text-align: center;
     font-size: 35px;
+    position: relative;
+    left: -40px;
+    background-color: wheat;
+    width: 200px;
+    border-radius: 100px;
 }
 
 .link a{
     margin:auto;
     padding-bottom:20px;
-    color: black;
     text-decoration: none;
 }
 
 .link a:active{
-    color:rgb(12, 12, 52);
+    color:rgb(18, 18, 88);
 }
 
 .link a:hover{
@@ -100,5 +111,5 @@
 }
 
 .link a:visited{
-    color:purple;
+    color:rgb(128, 0, 128);
 }
